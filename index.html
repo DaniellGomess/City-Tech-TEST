@@ -36,6 +36,7 @@
             }
         }
     </script>
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <style>
@@ -54,9 +55,10 @@
 </head>
 <body class="bg-[#080d1a] text-slate-200 font-sans antialiased selection:bg-[#00d2ff] selection:text-black">
 
-    <!-- HEADER -->
+    <!-- HEADER / NAVEGAÇÃO -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-[#080d1a]/95 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- LOGO -->
             <a href="index.html" class="flex items-center gap-3 group">
                 <div class="h-12 w-auto flex items-center justify-center rounded-xl p-1 bg-slate-900/80 border border-slate-700/60 shadow-lg shadow-sky-500/10 group-hover:border-[#00d2ff] transition">
                     <img src="logo.png" alt="City Of Tech Logo" class="h-10 w-auto object-contain rounded-lg" onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/d/U5f2bniEyqJk4GycI=w500';">
@@ -67,6 +69,7 @@
                 </div>
             </a>
 
+            <!-- MENU DESKTOP -->
             <nav class="hidden md:flex items-center gap-1 bg-slate-900/90 p-1.5 rounded-full border border-slate-800">
                 <a href="index.html" class="px-4 py-2 rounded-full text-xs lg:text-sm font-medium transition-all text-white bg-[#0284c7]/30 border border-[#00d2ff]/40">Home</a>
                 <a href="sites.html" class="px-4 py-2 rounded-full text-xs lg:text-sm font-medium transition-all text-slate-400 hover:text-white flex items-center gap-1">
@@ -78,36 +81,27 @@
                 <a href="contato.html" class="px-4 py-2 rounded-full text-xs lg:text-sm font-medium transition-all text-slate-400 hover:text-white">Contato</a>
             </nav>
 
+            <!-- CTA WHATSAPP HEADER -->
             <div class="hidden lg:flex items-center gap-4">
                 <a href="https://wa.me/5511954922131?text=Ol%C3%A1%20Daniel%2C%20tudo%20bem%3F" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-sky-500 to-cyan-500 text-slate-950 font-bold text-sm hover:shadow-lg hover:shadow-cyan-500/25 transition duration-300 transform hover:-translate-y-0.5">
-                    <!-- ÍCONE WHATSAPP OFICIAL -->
                     <svg class="w-4 h-4 fill-slate-950" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                     Falar no WhatsApp
                 </a>
             </div>
 
-            <button onclick="toggleMobileMenu()" class="md:hidden text-slate-300 hover:text-white p-2" aria-label="Abrir Menu">
-                <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+            <!-- MENU MOBILE TOGGLE -->
+            <button onclick="toggleMobileMenu()" class="md:hidden text-slate-300 hover:text-white p-2">
+                <i data-lucide="menu" class="w-6 h-6"></i>
             </button>
         </div>
 
+        <!-- MENU MOBILE DROPDOWN -->
         <div id="mobile-menu" class="hidden md:hidden bg-[#080d1a] border-b border-slate-800 px-4 py-4 space-y-2">
-            <a href="index.html" class="w-full text-left px-4 py-3 rounded-lg text-slate-200 hover:bg-slate-800 flex items-center gap-3">
-                <i data-lucide="home" class="w-4 h-4 text-[#00d2ff]"></i> Home
-            </a>
-            <a href="sites.html" class="w-full text-left px-4 py-3 rounded-lg text-slate-200 hover:bg-slate-800 flex items-center justify-between">
-                <div class="flex items-center gap-3"><i data-lucide="layout" class="w-4 h-4 text-[#00d2ff]"></i> Criação de Sites</div>
-                <span class="px-2 py-0.5 bg-[#00d2ff]/20 text-[#00d2ff] text-xs font-bold rounded-full">Novo</span>
-            </a>
-            <a href="servicos.html" class="w-full text-left px-4 py-3 rounded-lg text-slate-200 hover:bg-slate-800 flex items-center gap-3">
-                <i data-lucide="cpu" class="w-4 h-4 text-[#00d2ff]"></i> Serviços
-            </a>
-            <a href="sobre.html" class="w-full text-left px-4 py-3 rounded-lg text-slate-200 hover:bg-slate-800 flex items-center gap-3">
-                <i data-lucide="user" class="w-4 h-4 text-[#00d2ff]"></i> Sobre Daniel
-            </a>
-            <a href="contato.html" class="w-full text-left px-4 py-3 rounded-lg text-slate-200 hover:bg-slate-800 flex items-center gap-3">
-                <i data-lucide="mail" class="w-4 h-4 text-[#00d2ff]"></i> Contato
-            </a>
+            <a href="index.html" class="w-full text-left px-4 py-3 rounded-lg text-slate-200 hover:bg-slate-800 flex items-center gap-3"><i data-lucide="home" class="w-4 h-4 text-[#00d2ff]"></i> Home</a>
+            <a href="sites.html" class="w-full text-left px-4 py-3 rounded-lg text-slate-200 hover:bg-slate-800 flex items-center justify-between"><div class="flex items-center gap-3"><i data-lucide="layout" class="w-4 h-4 text-[#00d2ff]"></i> Criação de Sites</div><span class="px-2 py-0.5 bg-[#00d2ff]/20 text-[#00d2ff] text-xs font-bold rounded-full">Novo</span></a>
+            <a href="servicos.html" class="w-full text-left px-4 py-3 rounded-lg text-slate-200 hover:bg-slate-800 flex items-center gap-3"><i data-lucide="cpu" class="w-4 h-4 text-[#00d2ff]"></i> Serviços</a>
+            <a href="sobre.html" class="w-full text-left px-4 py-3 rounded-lg text-slate-200 hover:bg-slate-800 flex items-center gap-3"><i data-lucide="user" class="w-4 h-4 text-[#00d2ff]"></i> Sobre Daniel</a>
+            <a href="contato.html" class="w-full text-left px-4 py-3 rounded-lg text-slate-200 hover:bg-slate-800 flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-[#00d2ff]"></i> Contato</a>
         </div>
     </header>
 
@@ -127,7 +121,7 @@
                         Quando o computador para, o e-mail não chega ou a rede cai, seu negócio não pode esperar. A City Of Tech oferece suporte técnico ágil, gestão de TI, nuvem e soluções sob medida para pessoas e empresas.
                     </p>
                     <div class="flex flex-wrap items-center gap-4 pt-4">
-                        <a href="https://wa.me/5511954922131?text=Ol%C3%A1%20Daniel%2C%20tudo%20bem%3F" target="_blank" class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-sky-500 to-cyan-500 text-slate-950 font-bold text-base hover:shadow-lg hover:shadow-cyan-500/25 transition duration-300 flex items-center gap-2">
+                        <a href="https://wa.me/5511954922131?text=Ol%C3%A1%20Daniel%2C%20tudo%20bem%3F" target="_blank" class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-sky-500 to-cyan-500 text-slate-950 font-bold text-base hover:shadow-lg hover:shadow-cyan-500/25 transition duration-300 flex items-center gap-2 transform hover:-translate-y-0.5">
                             <svg class="w-5 h-5 fill-slate-950" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                             Iniciar Atendimento
                         </a>
@@ -137,21 +131,19 @@
                     </div>
                 </div>
 
+                <!-- CARD DESTAQUE -->
                 <div class="lg:col-span-5">
                     <div class="bg-gradient-to-b from-slate-800/90 to-slate-900/90 p-8 rounded-3xl border border-slate-700/80 shadow-2xl relative overflow-hidden">
                         <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-[#00d2ff]/10 rounded-full blur-3xl pointer-events-none"></div>
-                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
-                            <i data-lucide="shield-check" class="w-6 h-6 text-[#00d2ff]"></i>
-                            Por que a City Of Tech?
-                        </h3>
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2"><i data-lucide="shield-check" class="w-6 h-6 text-[#00d2ff]"></i> Por que a City Of Tech?</h3>
                         <div class="space-y-4">
                             <div class="flex items-start gap-4 p-3.5 rounded-xl bg-slate-900/70 border border-slate-800">
                                 <div class="p-2 rounded-lg bg-sky-500/10 text-[#00d2ff]"><i data-lucide="ear" class="w-5 h-5"></i></div>
-                                <div><h4 class="text-sm font-bold text-slate-200">Entendemos antes de propor</h4><p class="text-xs text-slate-400 mt-0.5">Diagnóstico preciso para resolver a causa real do problema.</p></div>
+                                <div><h4 class="text-sm font-bold text-slate-200">Entendemos antes de propor</h4><p class="text-xs text-slate-400 mt-0.5">Diagnóstico preciso para resolver a causa real.</p></div>
                             </div>
                             <div class="flex items-start gap-4 p-3.5 rounded-xl bg-slate-900/70 border border-slate-800">
                                 <div class="p-2 rounded-lg bg-sky-500/10 text-[#00d2ff]"><i data-lucide="building" class="w-5 h-5"></i></div>
-                                <div><h4 class="text-sm font-bold text-slate-200">Bagagem de grandes empresas</h4><p class="text-xs text-slate-400 mt-0.5">Metodologias aplicadas em ambientes corporativos de alto nível.</p></div>
+                                <div><h4 class="text-sm font-bold text-slate-200">Bagagem Corporativa</h4><p class="text-xs text-slate-400 mt-0.5">Experiência em grandes ambientes de TI.</p></div>
                             </div>
                         </div>
                     </div>
@@ -163,25 +155,25 @@
         <section class="bg-slate-900/40 border-y border-slate-800 py-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-2xl mx-auto mb-12">
-                    <h2 class="text-3xl font-bold text-white">Soluções Rápidas e Estratégicas</h2>
+                    <h2 class="text-3xl font-bold text-white">Soluções Completas</h2>
                 </div>
                 <div class="grid md:grid-cols-3 gap-6">
                     <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 transition">
                         <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-[#00d2ff] flex items-center justify-center mb-5"><i data-lucide="server" class="w-6 h-6"></i></div>
-                        <h3 class="text-lg font-bold text-white mb-2">TI & Suporte Corporativo</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Gestão completa de computadores, Microsoft 365, e-mails institucionais e backup.</p>
+                        <h3 class="text-lg font-bold text-white mb-2">TI & Suporte</h3>
+                        <p class="text-slate-400 text-sm mb-4">Gestão completa de infraestrutura e suporte para empresas.</p>
                         <a href="servicos.html" class="text-[#00d2ff] text-sm font-semibold flex items-center gap-1 hover:underline">Saiba mais <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
                     </div>
                     <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 transition border-[#00d2ff]/30">
                         <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-[#00d2ff] flex items-center justify-center mb-5"><i data-lucide="globe" class="w-6 h-6"></i></div>
-                        <h3 class="text-lg font-bold text-white mb-2">Criação de Sites Profissionais</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Modelos personalizados, domínio próprio e layout para celular para atrair clientes.</p>
-                        <a href="sites.html" class="text-[#00d2ff] text-sm font-bold flex items-center gap-1 hover:underline">Ver Modelos e Planos <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                        <h3 class="text-lg font-bold text-white mb-2">Sites Profissionais</h3>
+                        <p class="text-slate-400 text-sm mb-4">Sites modernos e responsivos para atrair novos clientes.</p>
+                        <a href="sites.html" class="text-[#00d2ff] text-sm font-bold flex items-center gap-1 hover:underline">Ver Planos <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
                     </div>
                     <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 transition">
                         <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-[#00d2ff] flex items-center justify-center mb-5"><i data-lucide="monitor" class="w-6 h-6"></i></div>
-                        <h3 class="text-lg font-bold text-white mb-2">Consultoria de Hardware & Gamer</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Montagem e otimização de PC Gamer e estações de trabalho de alto desempenho.</p>
+                        <h3 class="text-lg font-bold text-white mb-2">Consultoria Gamer</h3>
+                        <p class="text-slate-400 text-sm mb-4">Montagem de PCs de alta performance com quem entende.</p>
                         <a href="servicos.html" class="text-[#00d2ff] text-sm font-semibold flex items-center gap-1 hover:underline">Saiba mais <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
                     </div>
                 </div>
@@ -191,68 +183,55 @@
         <!-- CTA FINAL -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <div class="rounded-3xl bg-gradient-to-r from-blue-900/40 via-slate-900 to-sky-950/40 border border-sky-500/30 p-8 sm:p-12 text-center relative overflow-hidden">
-                <h2 class="text-3xl sm:text-4xl font-black text-white mb-4">Tem um desafio técnico ou precisa de suporte?</h2>
-                <p class="text-slate-300 max-w-2xl mx-auto mb-8 text-sm sm:text-base">Não deixe um problema de TI interromper o seu dia. Converse diretamente no WhatsApp.</p>
+                <h2 class="text-3xl sm:text-4xl font-black text-white mb-4">Vamos resolver seu desafio hoje?</h2>
                 <a href="https://wa.me/5511954922131?text=Ol%C3%A1%20Daniel%2C%20tudo%20bem%3F" target="_blank" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-sky-500 to-cyan-500 text-slate-950 font-extrabold text-base hover:shadow-xl hover:shadow-cyan-500/30 transition">
                     <svg class="w-5 h-5 fill-slate-950" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                    Solicitar Atendimento Agora
+                    Falar com o Daniel no WhatsApp
                 </a>
             </div>
         </section>
     </main>
 
-    <!-- BOTÃO FLUTUANTE DE WHATSAPP ATUALIZADO -->
+    <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
     <aside class="fixed bottom-6 right-6 z-50">
-        <a href="https://wa.me/5511954922131?text=Ol%C3%A1%20Daniel%2C%20gostaria%20de%20falar%20com%20voc%C3%AA%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 px-4 py-3 sm:px-6 sm:py-3.5 bg-[#25D366] hover:bg-[#20ba5a] text-slate-950 font-extrabold rounded-full shadow-2xl hover:shadow-[#25D366]/40 transition transform hover:scale-105">
+        <a href="https://wa.me/5511954922131?text=Ol%C3%A1%20Daniel%2C%20gostaria%20de%20falar%20com%20voc%C3%AA%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 px-4 py-3 sm:px-6 sm:py-3.5 bg-[#25D366] hover:bg-[#20ba5a] text-slate-950 font-extrabold rounded-full shadow-2xl transition transform hover:scale-105">
             <svg class="w-5 h-5 fill-slate-950" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
             <span class="text-xs sm:text-sm font-bold">Fale com o Daniel aqui!</span>
         </a>
     </aside>
-<!-- FOOTER (GLOBAL) -->
+
+    <!-- FOOTER COM TODOS OS BOTÕES -->
     <footer class="border-t border-slate-800/80 bg-slate-950 py-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-            
-            <!-- LOGO E SLOGAN -->
             <div class="flex items-center gap-3">
                 <div class="h-10 w-auto flex items-center justify-center rounded-lg p-1 bg-slate-900 border border-slate-700">
-                    <img src="logo.png" alt="City Of Tech" class="h-8 w-auto object-contain" onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/d/U5f2bniEyqJk4GycI=w500';">
+                    <img src="logo.png" alt="City Of Tech" class="h-8 w-auto object-contain">
                 </div>
                 <div>
-                    <span class="font-bold text-white text-base tracking-wider">CITY OF <span class="text-[#00d2ff]">TECH</span></span>
-                    <p class="text-xs text-slate-500">Montando Ideias. Conectando Soluções!</p>
+                    <span class="font-bold text-white text-base tracking-wider uppercase">City Of <span class="text-[#00d2ff]">Tech</span></span>
+                    <p class="text-[10px] text-slate-500 -mt-1 tracking-wider uppercase">Montando Ideias. Conectando Soluções!</p>
                 </div>
             </div>
 
-            <!-- BOTÕES DE REDES SOCIAIS E CONTATO -->
+            <!-- ÁREA DE ÍCONES (ESPAÇO PREENCHIDO) -->
             <div class="flex items-center gap-5 text-slate-400">
-                <!-- WHATSAPP -->
-                <a href="https://wa.me/5511954922131" target="_blank" rel="noopener noreferrer" class="hover:text-[#25D366] transition" title="WhatsApp">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/5511954922131" target="_blank" class="hover:text-[#25D366] transition" title="WhatsApp">
                     <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                 </a>
-                <!-- E-MAIL -->
-                <a href="mailto:cityoftech100@gmail.com" class="hover:text-[#00d2ff] transition" title="E-mail Profissional">
-                    <i data-lucide="mail" class="w-5 h-5"></i>
-                </a>
-                <!-- LINKEDIN -->
-                <a href="https://www.linkedin.com/in/daniel-gomes-25a767b5/" target="_blank" rel="noopener noreferrer" class="hover:text-[#0077b5] transition" title="LinkedIn Profissional">
-                    <i data-lucide="linkedin" class="w-5 h-5"></i>
-                </a>
-                <!-- YOUTUBE TECH -->
-                <a href="https://www.youtube.com/@CityOfTech10" target="_blank" rel="noopener noreferrer" class="hover:text-[#FF0000] transition" title="Canal City Of Tech (Tecnologia)">
-                    <i data-lucide="youtube" class="w-5 h-5"></i>
-                </a>
-                <!-- YOUTUBE GAMER -->
-                <a href="https://www.youtube.com/@CityofGames10" target="_blank" rel="noopener noreferrer" class="hover:text-[#f97316] transition" title="Canal City Of Games (Gamer)">
-                    <i data-lucide="gamepad-2" class="w-5 h-5"></i>
-                </a>
-                <!-- INSTAGRAM -->
-                <a href="https://www.instagram.com/city.oftech/" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400 transition" title="Instagram Oficial">
-                    <i data-lucide="instagram" class="w-5 h-5"></i>
-                </a>
+                <!-- Email -->
+                <a href="mailto:cityoftech100@gmail.com" class="hover:text-[#00d2ff] transition" title="E-mail Profissional"><i data-lucide="mail" class="w-5 h-5"></i></a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/daniel-gomes-25a767b5/" target="_blank" class="hover:text-[#0077b5] transition" title="LinkedIn Profissional"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                <!-- YT Tech -->
+                <a href="https://www.youtube.com/@CityOfTech10" target="_blank" class="hover:text-red-500 transition" title="YouTube Tecnologia"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                <!-- YT Gamer -->
+                <a href="https://www.youtube.com/@CityofGames10" target="_blank" class="hover:text-orange-500 transition" title="YouTube Gamer"><i data-lucide="gamepad-2" class="w-5 h-5"></i></a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/city.oftech/" target="_blank" class="hover:text-pink-400 transition" title="Instagram Oficial"><i data-lucide="instagram" class="w-5 h-5"></i></a>
             </div>
 
-            <!-- COPYRIGHT -->
-            <div class="text-xs text-slate-500">
+            <div class="text-[11px] text-slate-500 font-medium">
                 &copy; <span id="current-year"></span> City Of Tech — Fundado por Daniel Gomes.
             </div>
         </div>
