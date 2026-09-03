@@ -1,1 +1,230 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO NOTA 10: Foco em Suporte de TI e Consultoria -->
+    <title>Serviços de TI, Microsoft 365 e Consultoria Gamer | City Of Tech</title>
+    <meta name="description" content="Suporte técnico especializado para empresas e profissionais. Gestão de Microsoft 365, e-mails corporativos, backup em nuvem, infraestrutura de rede e montagem de PC Gamer.">
+    <meta name="keywords" content="suporte técnico ti, consultoria microsoft 365, backup em nuvem para empresas, configurar e-mail corporativo, montagem pc gamer, city of tech">
+    <link rel="canonical" href="https://www.cityoftech.com.br/servicos.html" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="logov.png">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#080d1a',
+                            cyan: '#00d2ff'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        html, body {
+            background-color: #080d1a !important;
+            color: #e2e8f0 !important;
+            margin: 0;
+            padding: 0;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #00d2ff 60%, #f97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#080d1a] text-slate-200 font-sans antialiased selection:bg-[#00d2ff] selection:text-black">
+
+    <!-- HEADER (PADRÃO GLOBAL) -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#080d1a]/95 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="h-12 w-auto flex items-center justify-center rounded-xl p-1 bg-slate-900/80 border border-slate-700/60 shadow-lg shadow-sky-500/10 group-hover:border-[#00d2ff] transition">
+                    <img src="logo.png" alt="City Of Tech Logo" class="h-10 w-auto object-contain rounded-lg">
+                </div>
+                <div class="hidden sm:block">
+                    <span class="text-xl font-black tracking-wider text-white">CITY OF <span class="text-[#00d2ff]">TECH</span></span>
+                    <p class="text-[10px] text-slate-400 -mt-1 tracking-widest uppercase">Montando Ideias. Conectando Soluções</p>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-1 bg-slate-900/90 p-1.5 rounded-full border border-slate-800">
+                <a href="index.html" class="px-4 py-2 rounded-full text-xs lg:text-sm font-medium transition-all text-slate-400 hover:text-white">Home</a>
+                <a href="sites.html" class="px-4 py-2 rounded-full text-xs lg:text-sm font-medium transition-all text-slate-400 hover:text-white flex items-center gap-1">
+                    <span>Criação de Sites</span>
+                    <span class="px-1.5 py-0.5 bg-[#00d2ff]/20 text-[#00d2ff] text-[9px] font-bold rounded-full">Novo</span>
+                </a>
+                <a href="servicos.html" class="px-4 py-2 rounded-full text-xs lg:text-sm font-medium transition-all text-white bg-[#0284c7]/30 border border-[#00d2ff]/40">Serviços</a>
+                <a href="sobre.html" class="px-4 py-2 rounded-full text-xs lg:text-sm font-medium transition-all text-slate-400 hover:text-white">Sobre Daniel</a>
+                <a href="contato.html" class="px-4 py-2 rounded-full text-xs lg:text-sm font-medium transition-all text-slate-400 hover:text-white">Contato</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="https://wa.me/5511954922131?text=Ol%C3%A1%20Daniel%2C%20vi%20seus%20servi%C3%A7os%20no%20site." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-sky-500 to-cyan-500 text-slate-950 font-bold text-sm">
+                    Falar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20">
+        <!-- HERO SERVIÇOS -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 lg:mb-24">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white leading-tight mb-6">
+                    Soluções Completas em <span class="gradient-text">Tecnologia</span>
+                </h1>
+                <p class="text-lg text-slate-400">
+                    Atendemos demandas pontuais para pessoas físicas e contratos mensais de gestão de TI para empresas que buscam estabilidade e segurança.
+                </p>
+            </div>
+        </section>
+
+        <!-- CATEGORIA: TI CORPORATIVA -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+            <div class="flex items-center gap-3 mb-10 border-b border-slate-800 pb-4">
+                <div class="p-2.5 rounded-lg bg-sky-500/10 text-[#00d2ff]"><i data-lucide="building-2" class="w-6 h-6"></i></div>
+                <h2 class="text-2xl font-bold text-white uppercase tracking-tight">TI para Empresas & Gestão Corporativa</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Suporte -->
+                <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-[#00d2ff]/40 transition group">
+                    <div class="text-[#00d2ff] mb-4"><i data-lucide="wrench" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-3">Suporte Técnico & Helpdesk</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Manutenção preventiva e corretiva de computadores, Windows e sistemas operacionais. Atendimento ágil para o seu negócio não parar.</p>
+                    <a href="https://wa.me/5511954922131?text=Quero%20saber%20mais%20sobre%20Suporte%20Técnico" class="text-[#00d2ff] text-xs font-bold uppercase flex items-center gap-2 group-hover:underline">Consultar Agora <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Microsoft 365 -->
+                <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-[#00d2ff]/40 transition group">
+                    <div class="text-[#00d2ff] mb-4"><i data-lucide="mail-check" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-3">Microsoft 365 & E-mail</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Implementação, migração e suporte para Outlook, Exchange e Teams. Gestão de licenciamento e segurança de e-mail corporativo.</p>
+                    <a href="https://wa.me/5511954922131?text=Quero%20saber%20mais%20sobre%20Microsoft%20365" class="text-[#00d2ff] text-xs font-bold uppercase flex items-center gap-2 group-hover:underline">Consultar Agora <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Cloud & Backup -->
+                <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-[#00d2ff]/40 transition group">
+                    <div class="text-[#00d2ff] mb-4"><i data-lucide="cloud" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-3">Nuvem & Backup Seguro</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Rotinas de backup automatizadas e compartilhamento de arquivos em nuvem segura. Proteção contra perda de dados críticos.</p>
+                    <a href="https://wa.me/5511954922131?text=Quero%20saber%20mais%20sobre%20Backup%20em%20Nuvem" class="text-[#00d2ff] text-xs font-bold uppercase flex items-center gap-2 group-hover:underline">Consultar Agora <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORIA: INFRAESTRUTURA E WEB -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 bg-slate-900/30 py-16 rounded-[3rem] border border-slate-800/50">
+            <div class="flex items-center gap-3 mb-10 border-b border-slate-800 pb-4 px-8">
+                <div class="p-2.5 rounded-lg bg-sky-500/10 text-[#00d2ff]"><i data-lucide="network" class="w-6 h-6"></i></div>
+                <h2 class="text-2xl font-bold text-white uppercase tracking-tight">Infraestrutura, Web & DNS</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 px-8">
+                <div class="flex gap-4">
+                    <div class="mt-1 text-[#00d2ff]"><i data-lucide="globe" class="w-6 h-6"></i></div>
+                    <div>
+                        <h3 class="text-lg font-bold text-white mb-2">Domínios & Hospedagem</h3>
+                        <p class="text-sm text-slate-400">Registro de domínios .com.br, configuração de DNS (SPF, DKIM, DMARC) e escolha da melhor hospedagem para seu site ou sistema.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="mt-1 text-[#00d2ff]"><i data-lucide="map-pin" class="w-6 h-6"></i></div>
+                    <div>
+                        <h3 class="text-lg font-bold text-white mb-2">Google Perfil de Empresas</h3>
+                        <p class="text-sm text-slate-400">Otimização completa no Google Maps para que clientes da sua região encontrem o seu negócio facilmente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORIA: HARDWARE E GAMER -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+            <div class="flex items-center gap-3 mb-10 border-b border-slate-800 pb-4">
+                <div class="p-2.5 rounded-lg bg-sky-500/10 text-[#00d2ff]"><i data-lucide="cpu" class="w-6 h-6"></i></div>
+                <h2 class="text-2xl font-bold text-white uppercase tracking-tight">Hardware & Consultoria Gamer</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- PC Gamer -->
+                <div class="p-8 rounded-3xl bg-gradient-to-br from-slate-900 to-[#0f172a] border border-slate-800 flex flex-col md:flex-row gap-6 items-center">
+                    <div class="p-5 rounded-2xl bg-orange-500/10 text-orange-400"><i data-lucide="gamepad-2" class="w-12 h-12"></i></div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">PC Gamer & High Performance</h3>
+                        <p class="text-sm text-slate-400 mb-4">Escolha de componentes com melhor custo-benefício, montagem profissional, organização de cabos e otimização de sistema para FPS máximo.</p>
+                        <a href="https://wa.me/5511954922131?text=Quero%20consultoria%20para%20PC%20Gamer" class="text-orange-400 text-xs font-bold uppercase flex items-center gap-2 hover:underline">Falar com o Daniel <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <!-- Estações de Trabalho -->
+                <div class="p-8 rounded-3xl bg-gradient-to-br from-slate-900 to-[#0f172a] border border-slate-800 flex flex-col md:flex-row gap-6 items-center">
+                    <div class="p-5 rounded-2xl bg-sky-500/10 text-sky-400"><i data-lucide="monitor" class="w-12 h-12"></i></div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">Workstations de Alto Nível</h3>
+                        <p class="text-sm text-slate-400 mb-4">Montagem de máquinas focadas em edição de vídeo, arquitetura e engenharia. Hardware estável para softwares pesados.</p>
+                        <a href="https://wa.me/5511954922131?text=Quero%20montar%20uma%20Workstation" class="text-sky-400 text-xs font-bold uppercase flex items-center gap-2 hover:underline">Falar com o Daniel <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL SERVIÇOS -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="rounded-[3rem] bg-gradient-to-r from-blue-900/40 via-slate-900 to-sky-950/40 border border-sky-500/30 p-10 lg:p-16 text-center">
+                <h2 class="text-3xl sm:text-4xl font-black text-white mb-6 leading-tight">Precisa de um suporte que realmente entende o seu problema?</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto mb-10">Não importa se você é um profissional autônomo ou uma empresa, a City Of Tech tem a solução técnica certa.</p>
+                <a href="https://wa.me/5511954922131" target="_blank" class="inline-flex items-center gap-3 px-10 py-5 rounded-2xl bg-gradient-to-r from-sky-500 to-cyan-500 text-slate-950 font-black text-lg hover:scale-105 transition shadow-xl shadow-cyan-500/20">
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    SOLICITAR ATENDIMENTO AGORA
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- BOTÃO FLUTUANTE (PADRÃO GLOBAL) -->
+    <aside class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/5511954922131" target="_blank" class="flex items-center gap-2.5 px-4 py-3 sm:px-6 sm:py-3.5 bg-[#25D366] text-slate-950 font-extrabold rounded-full shadow-2xl transition transform hover:scale-105">
+            <svg class="w-5 h-5 fill-slate-950" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            <span class="text-xs sm:text-sm font-bold">Fale com o Daniel aqui!</span>
+        </a>
+    </aside>
+
+    <!-- FOOTER (PADRÃO GLOBAL COM 6 ÍCONES) -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="flex items-center gap-4 text-left">
+                <div class="h-10 w-auto p-1 bg-slate-900 border border-slate-700 rounded-lg"><img src="logo.png" alt="Logo" class="h-8 w-auto"></div>
+                <div><span class="font-bold text-white text-base">CITY OF <span class="text-[#00d2ff]">TECH</span></span><p class="text-[10px] text-slate-500 uppercase tracking-wider">MONTANDO IDEIAS. CONECTANDO SOLUÇÕES!</p></div>
+            </div>
+            <div class="flex items-center gap-6 text-slate-400">
+                <a href="https://wa.me/5511954922131" target="_blank" class="hover:text-[#25D366] transition"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
+                <a href="mailto:cityoftech100@gmail.com" class="hover:text-white transition" title="Email"><i data-lucide="mail"></i></a>
+                <a href="https://www.linkedin.com/in/daniel-gomes-25a767b5/" target="_blank" class="hover:text-[#0077b5] transition" title="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="https://www.youtube.com/@CityOfTech10" target="_blank" class="hover:text-red-500 transition" title="YouTube Tech"><i data-lucide="youtube"></i></a>
+                <a href="https://www.youtube.com/@CityofGames10" target="_blank" class="hover:text-orange-500 transition" title="YouTube Gamer"><i data-lucide="gamepad-2"></i></a>
+                <a href="https://www.instagram.com/city.oftech/" target="_blank" class="hover:text-pink-500 transition" title="Instagram"><i data-lucide="instagram"></i></a>
+            </div>
+            <div class="text-xs text-slate-500">&copy; 2026 City Of Tech — Fundado por Daniel Gomes.</div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
