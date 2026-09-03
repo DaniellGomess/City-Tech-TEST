@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO NOTA 10: Autoridade e Biografia Profissional -->
-    <title>Sobre Daniel Gomes | Especialista em TI e Fundador da City Of Tech</title>
-    <meta name="description" content="Conheça a trajetória de Daniel Gomes, fundador da City Of Tech. Mais de 10 anos de experiência em TI (Claranet, Fujitsu), gestor de TI, criador de conteúdo gamer e músico.">
-    <meta name="keywords" content="Daniel Gomes TI, fundador City of Tech, especialista Microsoft 365, trajetória profissional TI, City of Games YouTube">
+    <!-- SEO NOTA 10 -->
+    <title>Sobre Daniel Gomes | City Of Tech</title>
+    <meta name="description" content="Conheça a história de Daniel Gomes, fundador da City Of Tech. Mais de 10 anos de experiência em TI, criador de conteúdo e músico.">
     <link rel="canonical" href="https://www.cityoftech.com.br/sobre.html" />
 
     <!-- Favicons -->
@@ -21,10 +20,7 @@
             theme: {
                 extend: {
                     colors: {
-                        brand: {
-                            dark: '#080d1a',
-                            cyan: '#00d2ff'
-                        }
+                        brand: { dark: '#080d1a', cyan: '#00d2ff' }
                     }
                 }
             }
@@ -33,12 +29,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <style>
-        html, body {
-            background-color: #080d1a !important;
-            color: #e2e8f0 !important;
-            margin: 0;
-            padding: 0;
-        }
+        html, body { background-color: #080d1a !important; color: #e2e8f0 !important; margin: 0; padding: 0; }
         .gradient-text {
             background: linear-gradient(135deg, #38bdf8 0%, #00d2ff 60%, #f97316 100%);
             -webkit-background-clip: text;
@@ -46,9 +37,9 @@
         }
     </style>
 </head>
-<body class="bg-[#080d1a] text-slate-200 font-sans antialiased selection:bg-[#00d2ff] selection:text-black">
+<body class="bg-[#080d1a] text-slate-200 font-sans antialiased">
 
-    <!-- HEADER (PADRÃO GLOBAL) -->
+    <!-- HEADER (GLOBAL) -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-[#080d1a]/95 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-3 group">
@@ -57,7 +48,7 @@
                 </div>
                 <div class="hidden sm:block">
                     <span class="text-xl font-black tracking-wider text-white">CITY OF <span class="text-[#00d2ff]">TECH</span></span>
-                    <p class="text-[10px] text-slate-400 -mt-1 tracking-widest uppercase">Montando Ideias. Conectando Soluções</p>
+                    <p class="text-[10px] text-slate-400 -mt-1 tracking-widest uppercase font-bold">Montando Ideias. Conectando Soluções</p>
                 </div>
             </a>
 
@@ -77,66 +68,123 @@
 
     <main class="pt-32 pb-20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-12 gap-12 items-start">
+            <div class="grid md:grid-cols-12 gap-10 items-start">
                 
-                <!-- COLUNA ESQUERDA: PERFIL -->
-                <div class="md:col-span-5 md:sticky md:top-32 text-center">
-                    <div class="relative inline-block mb-6">
-                        <div class="w-48 h-48 sm:w-64 sm:h-64 rounded-3xl bg-gradient-to-tr from-sky-500 to-cyan-500 p-1 shadow-2xl shadow-sky-500/20">
+                <!-- COLUNA ESQUERDA: PERFIL E REDES (AJUSTADO CONFORME IMAGEM) -->
+                <div class="md:col-span-5 md:sticky md:top-32 space-y-4">
+                    <!-- Foto de Perfil -->
+                    <div class="bg-slate-900 p-6 rounded-3xl border border-slate-800 text-center mb-6">
+                        <div class="w-40 h-40 mx-auto rounded-3xl bg-gradient-to-tr from-sky-500 to-cyan-500 p-1 mb-4 shadow-xl">
                             <img src="daniel.jpg" alt="Daniel Gomes" class="w-full h-full object-cover rounded-[22px]" onerror="this.src='logo.png'">
                         </div>
-                        <div class="absolute -bottom-4 -right-4 bg-slate-900 border border-slate-700 p-3 rounded-2xl shadow-xl">
-                            <i data-lucide="verified" class="w-8 h-8 text-[#00d2ff]"></i>
-                        </div>
+                        <h3 class="text-2xl font-black text-white">Daniel Gomes</h3>
+                        <p class="text-[#00d2ff] text-xs font-bold uppercase tracking-widest">Fundador da City Of Tech</p>
                     </div>
-                    <h1 class="text-3xl font-black text-white mb-1">Daniel Gomes</h1>
-                    <p class="text-[#00d2ff] font-bold text-sm mb-6 uppercase tracking-widest">Fundador & Gestor de TI</p>
-                    
-                    <!-- LINKS RÁPIDOS PERFIL -->
+
+                    <!-- LISTA DE LINKS (ESTILO CARTÃO DA IMAGEM) -->
                     <div class="space-y-3">
-                        <a href="https://www.linkedin.com/in/daniel-gomes-25a767b5/" target="_blank" class="flex items-center justify-between p-4 bg-slate-900 border border-slate-800 rounded-2xl hover:border-[#0077b5] transition group">
-                            <span class="text-sm font-bold flex items-center gap-2 text-slate-300"><i data-lucide="linkedin" class="w-5 h-5 text-[#0077b5]"></i> LinkedIn Profissional</span>
-                            <i data-lucide="external-link" class="w-4 h-4 text-slate-600 group-hover:text-white"></i>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/daniel-gomes-25a767b5/" target="_blank" class="flex items-center gap-4 p-3.5 bg-slate-900/50 border border-slate-800 rounded-2xl hover:bg-slate-800 transition group">
+                            <div class="w-10 h-10 rounded-xl bg-[#0077b5]/15 flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5 fill-[#0077b5]" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-[10px] text-slate-500 font-medium">LinkedIn Pessoal</div>
+                                <div class="text-sm font-bold text-white group-hover:text-[#00d2ff] transition">Daniel Gomes</div>
+                            </div>
                         </a>
-                        <a href="https://www.youtube.com/@CityOfTech10" target="_blank" class="flex items-center justify-between p-4 bg-slate-900 border border-slate-800 rounded-2xl hover:border-red-500 transition group">
-                            <span class="text-sm font-bold flex items-center gap-2 text-slate-300"><i data-lucide="youtube" class="w-5 h-5 text-red-500"></i> YouTube Tecnologia</span>
-                            <i data-lucide="external-link" class="w-4 h-4 text-slate-600 group-hover:text-white"></i>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/city.oftech/" target="_blank" class="flex items-center gap-4 p-3.5 bg-slate-900/50 border border-slate-800 rounded-2xl hover:bg-slate-800 transition group">
+                            <div class="w-10 h-10 rounded-xl bg-pink-500/15 flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5 fill-pink-500" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            </div>
+                            <div>
+                                <div class="text-[10px] text-slate-500 font-medium">Instagram Oficial</div>
+                                <div class="text-sm font-bold text-white group-hover:text-[#00d2ff] transition">@city.oftech</div>
+                            </div>
                         </a>
-                        <a href="https://www.youtube.com/@CityofGames10" target="_blank" class="flex items-center justify-between p-4 bg-slate-900 border border-slate-800 rounded-2xl hover:border-orange-500 transition group">
-                            <span class="text-sm font-bold flex items-center gap-2 text-slate-300"><i data-lucide="gamepad-2" class="w-5 h-5 text-orange-500"></i> Canal Gamer</span>
-                            <i data-lucide="external-link" class="w-4 h-4 text-slate-600 group-hover:text-white"></i>
+
+                        <!-- YouTube Tech -->
+                        <a href="https://www.youtube.com/@CityOfTech10" target="_blank" class="flex items-center gap-4 p-3.5 bg-slate-900/50 border border-slate-800 rounded-2xl hover:bg-slate-800 transition group">
+                            <div class="w-10 h-10 rounded-xl bg-red-500/15 flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5 fill-red-500" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            </div>
+                            <div>
+                                <div class="text-[10px] text-slate-500 font-medium">YouTube Tecnologia</div>
+                                <div class="text-sm font-bold text-white group-hover:text-[#00d2ff] transition">@CityOfTech10</div>
+                            </div>
+                        </a>
+
+                        <!-- YouTube Gamer -->
+                        <a href="https://www.youtube.com/@CityofGames10" target="_blank" class="flex items-center gap-4 p-3.5 bg-slate-900/50 border border-slate-800 rounded-2xl hover:bg-slate-800 transition group">
+                            <div class="w-10 h-10 rounded-xl bg-orange-500/15 flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5 fill-orange-500" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            </div>
+                            <div>
+                                <div class="text-[10px] text-orange-500 font-bold flex items-center gap-1">Canal Gamer 🎮</div>
+                                <div class="text-sm font-bold text-white group-hover:text-[#00d2ff] transition">City Of Games (@CityofGames10)</div>
+                            </div>
+                        </a>
+
+                        <!-- E-mail -->
+                        <a href="mailto:cityoftech100@gmail.com" class="flex items-center gap-4 p-3.5 bg-slate-900/50 border border-slate-800 rounded-2xl hover:bg-slate-800 transition group">
+                            <div class="w-10 h-10 rounded-xl bg-[#00d2ff]/15 flex items-center justify-center shrink-0">
+                                <i data-lucide="mail" class="w-5 h-5 text-[#00d2ff]"></i>
+                            </div>
+                            <div>
+                                <div class="text-[10px] text-slate-500 font-medium">E-mail de Contato</div>
+                                <div class="text-sm font-bold text-white group-hover:text-[#00d2ff] transition">cityoftech100@gmail.com</div>
+                            </div>
                         </a>
                     </div>
                 </div>
 
-                <!-- COLUNA DIREITA: HISTÓRIA -->
-                <div class="md:col-span-7 space-y-8 text-slate-300 leading-relaxed text-lg">
-                    <div>
-                        <h2 class="text-3xl font-black text-white mb-6">Prazer, eu sou o Daniel.</h2>
-                        <p class="mb-4">Minha trajetória na tecnologia começou há mais de <strong>10 anos</strong>. Sou formado em <strong>Gestão da Tecnologia da Informação</strong> e tive o privilégio de atuar em grandes ambientes corporativos, como <strong>Claranet e Fujitsu</strong>.</p>
-                        <p>Foram anos vivendo a TI na prática: solucionando problemas críticos e entendendo como a tecnologia impacta diretamente a rotina das empresas. Da infraestrutura ao Microsoft 365, minha missão sempre foi uma só: <strong>resolver</strong>.</p>
+                <!-- COLUNA DIREITA: TEXTO COMPLETO -->
+                <div class="md:col-span-7 space-y-6 text-slate-300 leading-relaxed text-base lg:text-lg">
+                    <h2 class="text-3xl font-black text-white leading-tight">Prazer, eu sou Daniel Gomes.</h2>
+                    
+                    <p>Minha trajetória na tecnologia começou há mais de 10 anos.</p>
+                    <p>Sou formado em <strong>Gestão da Tecnologia da Informação</strong> e, ao longo da minha carreira, tive a oportunidade de atuar em grandes ambientes corporativos, incluindo empresas como <strong>Claranet e Fujitsu</strong>.</p>
+                    <p>Foram anos vivendo a TI na prática: acompanhando demandas, solucionando problemas e entendendo como a tecnologia impacta diretamente a rotina das pessoas e o funcionamento de uma empresa.</p>
+                    <p>Nesse caminho, desenvolvi experiência com ambientes Windows, suporte técnico, Microsoft 365, e-mails corporativos, infraestrutura e diferentes soluções de tecnologia, sempre lidando com situações em que encontrar a solução certa faz toda a diferença.</p>
+                    <p>E foi justamente essa experiência que moldou a forma como enxergo a tecnologia hoje.</p>
+
+                    <!-- QUOTE -->
+                    <div class="p-6 rounded-3xl bg-sky-950/30 border-l-4 border-[#00d2ff] my-8 shadow-lg">
+                        <p class="text-white italic">"Quando um computador para, um e-mail deixa de chegar ou uma ferramenta essencial apresenta um problema, não existe apenas uma falha técnica. Existe uma pessoa — e, muitas vezes, uma empresa inteira — dependendo daquela solução."</p>
                     </div>
 
-                    <!-- CITAÇÃO -->
-                    <div class="p-8 rounded-3xl bg-sky-950/20 border-l-4 border-[#00d2ff] italic text-white shadow-lg">
-                        "Tecnologia só faz sentido quando funciona a favor das pessoas. Quando um computador para, não é apenas um erro técnico, é um negócio que deixa de produzir."
-                    </div>
+                    <p>Por isso, meu trabalho nunca começa simplesmente pela tecnologia.</p>
+                    <p>Começa por entender o problema, investigar sua origem e encontrar a solução mais adequada para cada situação.</p>
 
-                    <div>
-                        <h3 class="text-2xl font-bold text-white mb-4">Além das Telas... 🎮 🎸</h3>
-                        <p class="mb-4">Fora do mundo dos servidores e códigos, a tecnologia continua sendo minha paixão através dos games. Sou o criador do canal <strong>City Of Games</strong>, onde compartilho conteúdos e experiências com uma comunidade gamer vibrante.</p>
-                        <p>E quando as luzes dos monitores se apagam, a música assume o controle. Sou músico multi-instrumentista, canto e toco <strong>violão, guitarra, baixo, bateria e teclado</strong>. Acredito que a criatividade da música e a lógica da TI se complementam perfeitamente.</p>
-                    </div>
+                    <h3 class="text-2xl font-bold text-white pt-4 italic">Foi dessa visão que nasceu a City Of Tech.</h3>
+                    <p>A City Of Tech nasceu para aproximar pessoas e empresas da tecnologia, transformando aquilo que muitas vezes parece complicado em soluções mais claras, acessíveis e eficientes.</p>
+                    <p>Mais do que oferecer serviços técnicos, quero construir uma marca na qual o cliente saiba que pode encontrar alguém disposto a ouvir, analisar e buscar uma solução para o seu problema.</p>
+                    <p class="font-bold text-[#00d2ff]">Porque tecnologia, para mim, só faz sentido quando funciona a favor das pessoas.</p>
 
+                    <hr class="border-slate-800 my-8">
+
+                    <p>Mas tecnologia também faz parte de quem eu sou fora do ambiente corporativo. <br>Sou <strong>gamer e criador de conteúdo. 🎮</strong></p>
+                    <p>Também sou o criador do <strong>City Of Games</strong>, canal dedicado ao universo dos games, onde compartilho conteúdo com uma comunidade que venho construindo ao redor de uma das minhas grandes paixões.</p>
+                    <p>E essa vontade de compartilhar conhecimento também está presente no <strong>City Of Tech no YouTube</strong>, onde tecnologia deixa de ser apenas o meu trabalho e também se transforma em conteúdo: tutoriais, soluções, experiências, hardware e tudo aquilo que pode ajudar outras pessoas a entender melhor esse universo.</p>
+                    <p>Acredito muito que conhecimento técnico ganha ainda mais valor quando conseguimos compartilhá-lo e utilizá-lo para ajudar alguém do outro lado.</p>
+
+                    <h3 class="text-2xl font-bold text-white pt-4">E quando saio um pouco das telas... 🎸</h3>
+                    <p>Existe outra paixão que sempre esteve presente na minha vida: <strong>a música.</strong></p>
+                    <p>Sou músico, canto e toco violão, guitarra, baixo, bateria e teclado.</p>
+                    <p>À primeira vista, tecnologia, games, criação de conteúdo e música podem parecer universos completamente diferentes. Para mim, todos eles acabam se encontrando em algumas características que sempre fizeram parte de quem eu sou:</p>
+
+                    <p class="text-xl font-black gradient-text uppercase tracking-tighter">curiosidade, criatividade e vontade de entender como as coisas funcionam.</p>
+
+                    <p>Hoje, é essa combinação de mais de 10 anos de experiência, conhecimento técnico, criatividade e proximidade com as pessoas que quero levar para cada projeto desenvolvido pela City Of Tech.</p>
+                    <p class="font-bold text-white">Porque antes de existir uma empresa oferecendo uma solução, existe uma pessoa disposta a entender o seu problema.</p>
+
+                    <!-- ASSINATURA -->
                     <div class="pt-8 border-t border-slate-800">
-                        <h3 class="text-2xl font-bold text-white mb-6">Por que a City Of Tech?</h3>
-                        <p>Fundei a City Of Tech para unir toda essa bagagem técnica com um atendimento mais humano e direto. Quero que você sinta que tem um parceiro tecnológico disposto a ouvir e analisar cada desafio antes de propor a solução.</p>
-                    </div>
-
-                    <div class="flex flex-wrap gap-4 pt-4">
-                        <div class="px-5 py-3 rounded-2xl bg-slate-900 border border-slate-800 text-sm font-bold text-[#00d2ff]">+10 Anos Exp.</div>
-                        <div class="px-5 py-3 rounded-2xl bg-slate-900 border border-slate-800 text-sm font-bold text-[#00d2ff]">Gestor de TI</div>
-                        <div class="px-5 py-3 rounded-2xl bg-slate-900 border border-slate-800 text-sm font-bold text-[#00d2ff]">Músico & Gamer</div>
+                        <div class="text-2xl font-black text-white">Daniel Gomes</div>
+                        <div class="text-sm font-bold text-[#00d2ff]">Fundador da City Of Tech</div>
+                        <div class="text-xs text-slate-500 uppercase tracking-widest font-bold">Gestão da Tecnologia da Informação</div>
                     </div>
                 </div>
             </div>
@@ -145,18 +193,21 @@
 
     <!-- BOTÃO FLUTUANTE -->
     <aside class="fixed bottom-6 right-6 z-50">
-        <a href="https://wa.me/5511954922131" target="_blank" class="flex items-center gap-2.5 px-4 py-3 bg-[#25D366] text-slate-950 font-extrabold rounded-full shadow-2xl hover:scale-105 transition">
+        <a href="https://wa.me/5511954922131?text=Ol%C3%A1%20Daniel%2C%20vi%20seu%20perfil%20no%20site." target="_blank" class="flex items-center gap-2.5 px-4 py-3 bg-[#25D366] text-slate-950 font-extrabold rounded-full shadow-2xl hover:scale-105 transition">
             <svg class="w-5 h-5 fill-slate-950" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-            <span class="text-xs sm:text-sm font-bold">Fale com o Daniel aqui!</span>
+            <span class="text-xs sm:text-sm font-bold text-slate-950">Fale com o Daniel aqui!</span>
         </a>
     </aside>
 
-    <!-- FOOTER (GLOBAL COM 6 ÍCONES) -->
+    <!-- FOOTER (GLOBAL) -->
     <footer class="border-t border-slate-800 bg-slate-950 py-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
-            <div class="flex items-center gap-4 text-left">
+            <div class="flex items-center gap-4">
                 <div class="h-10 w-auto p-1 bg-slate-900 border border-slate-700 rounded-lg"><img src="logo.png" alt="Logo" class="h-8 w-auto"></div>
-                <div><span class="font-bold text-white text-base">CITY OF <span class="text-[#00d2ff]">TECH</span></span><p class="text-[10px] text-slate-500 uppercase tracking-wider">MONTANDO IDEIAS. CONECTANDO SOLUÇÕES!</p></div>
+                <div>
+                    <span class="font-bold text-white text-base tracking-widest uppercase italic">CITY OF <span class="text-[#00d2ff]">TECH</span></span>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">MONTANDO IDEIAS. CONECTANDO SOLUÇÕES!</p>
+                </div>
             </div>
             <div class="flex items-center gap-6 text-slate-400">
                 <a href="https://wa.me/5511954922131" target="_blank" class="hover:text-[#25D366] transition"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
@@ -166,7 +217,7 @@
                 <a href="https://www.youtube.com/@CityofGames10" target="_blank" class="hover:text-orange-500 transition" title="YouTube Gamer"><i data-lucide="gamepad-2"></i></a>
                 <a href="https://www.instagram.com/city.oftech/" target="_blank" class="hover:text-pink-500 transition" title="Instagram"><i data-lucide="instagram"></i></a>
             </div>
-            <div class="text-xs text-slate-500">&copy; 2026 City Of Tech — Fundado por Daniel Gomes.</div>
+            <div class="text-xs text-slate-500 font-bold uppercase tracking-widest italic">&copy; 2026 City Of Tech — Fundado por Daniel Gomes.</div>
         </div>
     </footer>
 
